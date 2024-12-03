@@ -745,7 +745,7 @@ def get_cumulative_inset(f, type2shift_score, top_n, normalization, plot_params)
     in_ax.set_xticklabels(plot_params["cumulative_xticklabels"], fontsize=11)
     # Make tick labels smaller
     for tick in in_ax.yaxis.get_major_ticks():
-        tick.label.set_fontsize(11)
+        tick.label1.set_fontsize(11)
     # Plot top_n line
     x_min, x_max = in_ax.get_xlim()
     in_ax.hlines(top_n, x_min, x_max, linestyle="-", color="black", linewidth=0.5)
